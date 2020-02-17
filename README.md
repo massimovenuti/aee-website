@@ -3,8 +3,8 @@
 ## Utilisation du projet
 
 * Faire un "fork" du projet dans votre Gitlab universitaire ;
-* Ajouter votre formateur TP aux "Developer" de votre projet ;
-* Faire un "clone" de votre projet dans :
+* Ajouter votre formateur TP aux "Developer" de votre projet (settings>Members>Project Members) ;
+* Faire un `clone` de votre projet dans :
     * Si vous êtes sur votre machine :
         * `/var/www/html/` si vous êtes sur Linux
         * Dans votre répertoire WAMP (Windows) ou XAMP (Mac) dans le dossier `www`
@@ -39,3 +39,9 @@
 * Dossier `templates` : y mettre tous les fichiers communs à toutes les pages (navbar, footer...).
 * Page d'accueil = `index.php`
 * Pour les autres pages, les organiser en fonction des urls voulues.
+
+## Rappels GIT
+
+* `clone` : `git clone <url du repository>`
+* `commit` : `git add . && git commit -m "<message de commit>"`
+* `push`: `git push origin <nom de la branche>`
