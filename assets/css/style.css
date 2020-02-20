@@ -1,0 +1,18 @@
+/* NAVBAR */
+.navbar-brand {
+    margin-left: 20px;
+}
+.navbar-nav {
+    margin-left: auto;
+}
+.nav-item {
+    margin-left:15px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+header h2 {
+    margin-left: 20px;
+}
