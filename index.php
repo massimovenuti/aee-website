@@ -46,7 +46,7 @@
         <section class="container annonces">
             <div class="row">
                 <div class="col-12 titre-2">
-                    <h1>Dernières annonces</h1>
+                    <h2>Dernières annonces</h2>
                 </div>
                 <div class="col-12 cards">
                     <div class="card" style="width:80%;">

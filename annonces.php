@@ -12,7 +12,7 @@
 
         <!-- HEADER -->
         <header>
-            <h1>Annonces</h1>
+            <h2>Annonces</h2>
         </header>
         <!-- HEADER -->
 

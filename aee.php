@@ -11,7 +11,7 @@
 
         <!-- HEADER -->
         <header>
-            <h1>Qui sommes nous ?</h1>
+            <h2>Qui sommes nous ?</h2>
         </header>
         <!-- HEADER -->
 

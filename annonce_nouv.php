@@ -11,7 +11,7 @@
 
         <!-- HEADER -->
         <header>
-            <h1>Nouvelle annonce</h1>
+            <h2>Nouvelle annonce</h2>
         </header>
         <!-- HEADER -->
 
