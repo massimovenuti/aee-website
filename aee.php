@@ -10,7 +10,7 @@
         <!-- NAVBAR -->
 
         <!-- HEADER -->
-        <header>
+        <header class="container">
             <h2>Qui sommes nous ?</h2>
         </header>
         <!-- HEADER -->

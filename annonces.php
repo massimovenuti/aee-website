@@ -11,7 +11,7 @@
         <!-- NAVBAR -->
 
         <!-- HEADER -->
-        <header>
+        <header class="container">
             <h2>Annonces</h2>
         </header>
         <!-- HEADER -->
@@ -20,30 +20,30 @@
         <section class="container">
             <div class="row annonces">
                 <div class="col-12 bouton">
-                    <a class="btn btn-primary" href="annonce_nouv.php" role="button">Ajouter une annonce</a>
+                    <a class="btn btn-dark" href="annonce_nouv.php" role="button">Ajouter une annonce</a>
                 </div>
 
                 <div class="col-3 annonce-img">
-                    <img src="assets/img/annonce1.jpg" alt="">
+                    <img src="assets/img/annonce.jpg" alt="">
                 </div>
                 <div class="col-9 annonce-txt">
-                    <h2>Annonce 1</h2>
+                    <h3>Annonce 1</h3>
                     <p>Lorem tempor nulla ipsum eu anim sunt. Non ea pariatur est ea aliqua laborum adipisicing fugiat aliqua labore elit minim consequat. Proident sint sunt ex minim consequat amet adipisicing sit. Non tempor labore deserunt exercitation adipisicing sit amet ut eu. Laboris enim duis irure ullamco incididunt esse sint laboris et est fugiat veniam.</p>
                 </div>
 
                 <div class="col-3 annonce-img">
-                    <img src="assets/img/annonce2.jpg" alt="">
+                    <img src="assets/img/annonce.jpg" alt="">
                 </div>
                 <div class="col-9 annonce-txt">
-                    <h2>Annonce 2</h2>
+                    <h3>Annonce 2</h3>
                     <p>Lorem incididunt veniam aliqua nostrud cupidatat irure officia aliqua. Culpa magna culLorem incididunt veniam aliqua nostrud cupidatat irure officia aliqua. Culpa magna culpa consequat sit incididunt culpa nulla officia reprehenderit esse. Laborum aliquip fugiat proident tempor nulla ipsum eu anim sunt. Non ea pariatur est ea aliqua laborum adipisicing fugiat aliqua labore elit minim consequat. Proident sint sunt ex minim consequat amet adipisicing sit. Non tempor labore deserunt exercitation adipisicing sit amet ut eu. Laboris enim duis irure ullamco incididunt esse sint laboris et est fugiat veniam.</p>
                 </div>
 
                 <div class="col-3 annonce-img">
-                    <img src="assets/img/annonce3.jpg" alt="">
+                    <img src="assets/img/annonce.jpg" alt="">
                 </div>
                 <div class="col-9 annonce-txt">
-                    <h2>Annonce 3</h2>
+                    <h3>Annonce 3</h3>
                     <p>Lorem incididunt veniam aliqua nostrud cupidatat irure officia aliqua. Culpa magna culpa consequat sit incididunt culpa nulla officia reprehenderit esse. Laborum aliquip fugiat proident tempor nulla ipsum eu anim sunt. Non ea pariatur est ea aliqua laborum adipisicing fugiat aliqua labore elit minim consequat. Proident sint sunt ex minim consequat amet adipisicing sit. Non tempor labore deserunt exercitation adipisicing sit amet ut eu. Laboris enim duis irure ullamco incididunt esse sint laboris et est fugiat veniam.</p>
                 </div>
             </div>

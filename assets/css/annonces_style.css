@@ -1,10 +1,10 @@
 /* TEXTE */
 .annonce-txt {
     border: 1px solid rgba(0,0,0,.125);
-    padding: 20px;
+    padding-top: 20px;
     border-top-right-radius: calc(.25rem - 1px);
     border-bottom-right-radius: calc(.25rem - 1px);
-    overflow: scroll;
+    overflow: hidden;
 }
 /* TEXTE */
 
@@ -24,17 +24,14 @@
 /* BOUTON */
 .bouton {
     text-align: end;
-    margin-bottom: -30px;
+    margin-bottom: -4vh;
 }
 /* BOUTON */
 
 /* COLONNES */
-.annonces {
-    margin-top: 20px;
-}
 .annonce-txt, .annonce-img {
-    margin-top: 40px;
-    max-height: 300px;
+    margin-top: 5vh;
+    max-height: 140px;
 }
 /* COLONNES */
 

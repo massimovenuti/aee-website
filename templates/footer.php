@@ -1,5 +1,5 @@
-<footer>
-    <div class="container">
+<footer class="container-fluid">
+    <div>
         <div class="row">
             <div class="col-12">
                 <a href=""><img src="/projet-s4/assets/img/facebook.svg" alt="" class="icon"></a>

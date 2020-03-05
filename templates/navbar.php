@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="row">
-        <div class="col-12 titre-1">
+        <div class="col-12">
             <h1>AEE | Association des Étudiants Etrangers</h1>
         </div>
         <div class="col-12">
@@ -22,14 +22,13 @@
                         <a class="nav-link" href="/projet-s4/contact.php">CONTACT</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            LANGUE
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Français</a>
-                            <a class="dropdown-item" href="#">English</a>
-                            <a class="dropdown-item" href="#">Deutsch</a>
-                        </div>
+                        <form class="form-inline">
+                            <select class="custom-select my-1 mr-sm-2">
+                                <option value="FR">FR</option>
+                                <option value="EN">EN</option>
+                                <option value="DE">DE</option>
+                            </select>
+                        </form>
                     </li>
                 </ul> 
             </div>

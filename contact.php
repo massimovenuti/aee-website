@@ -10,7 +10,7 @@
         <!-- NAVBAR -->
 
         <!-- HEADER -->
-        <header>
+        <header class="container">
             <h2>Contact</h2>
         </header>
         <!-- HEADER -->
@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </form>
-            <a class="btn btn-primary" href="annonce_nouv.php" role="button">Envoyer</a>
+            <a class="btn btn-dark" href="annonce_nouv.php" role="button">Envoyer</a>
         </section>
         <!-- FORMULAIRE -->
 

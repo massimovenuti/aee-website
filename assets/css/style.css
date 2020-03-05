@@ -1,6 +1,17 @@
+/* BODY */
+body {
+    background: rgb(205,8,131);
+    background: linear-gradient(90deg, rgba(205,8,131,1) 0%, rgba(192,4,165,1) 25%, rgba(165,3,183,1) 50%, rgba(122,12,188,1) 75%, rgba(83,10,192,1) 100%);
+}
+.container {
+    padding:10vh 6vw 10vh 6vw;
+    background-color: #fff;
+}
+/* BODY */
+
 /* NAVBAR */
-.navbar-brand {
-    margin-left: 20px;
+.navbar {
+    background-color: #fff!important;
 }
 .navbar-nav {
     margin-left: auto;
@@ -9,7 +20,7 @@
 .nav-item {
     margin-left:15px;
 }
-.titre-1 {
+.navbar h1 {
     margin-top:20px;
     text-align: center;
 }
@@ -17,24 +28,22 @@
 
 /* HEADER */
 header {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-header .row {
+    margin-top: 15vh;
     text-align: center;
+    margin-bottom: -15vh;
 }
 /* HEADER */
 
 /* FOOTER */
 footer {
     text-align: center;
-    margin-top: 100px;
-    padding-top: 50px;
-    background-color: black;
-    color: white;
+    margin-top: 15vh;
+    background-color: #fff;
+    margin-bottom: 0!important;
 }
 .icon{
     height:40px!important;
 }
 /* FOOTER */
+
+/* RESPONSIVE */

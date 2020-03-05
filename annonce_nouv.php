@@ -10,7 +10,7 @@
         <!-- NAVBAR -->
 
         <!-- HEADER -->
-        <header>
+        <header class="container">
             <h2>Nouvelle annonce</h2>
         </header>
         <!-- HEADER -->
@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </form>
-            <a class="btn btn-primary" href="annonce_nouv.php" role="button">Publier l'annonce</a>
+            <a class="btn btn-dark" href="annonce_nouv.php" role="button">Publier l'annonce</a>
         </section>
         <!-- FORMULAIRE -->
 
