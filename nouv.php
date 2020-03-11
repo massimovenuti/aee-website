@@ -2,36 +2,29 @@
 <html lang="fr">
     <head>
         <?php include("templates/meta.php"); ?>
+        <link rel="stylesheet" href="assets/css/form.css">
         <title>Ajouter une annonce | Association des Étudiants Étrangers</title>
     </head>
     <body>
-        <!-- NAVBAR -->
-        <?php include("templates/navbar.php"); ?>
-        <!-- NAVBAR -->
-
         <!-- HEADER -->
-        <header class="container">
-            <h2>Nouvelle annonce</h2>
-        </header>
+        <?php include("templates/header.php"); ?>
         <!-- HEADER -->
 
         <!-- FORMULAIRE -->
-        <section class="container">
+        <section class="container tuile">
+            <header>
+                <h2>Nouvelle annonce</h2>
+            </header>
             <form>
-                <div class="form-group">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Titre">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" rows="10" placeholder="Votre annonce"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Image</label>
-                        <input type="file" class="form-control-file">
-                    </div>
-                </div>
+                <input type="text" class="form-control" placeholder="Titre">
+                <textarea class="form-control" rows="4" placeholder="Résumé"></textarea>
+                <textarea class="form-control" rows="10" placeholder="Votre annonce"></textarea>
+                <label for="exampleFormControlFile1">Image</label>
+                <input type="file" class="form-control-file">
             </form>
-            <a class="btn btn-dark" href="annonce_nouv.php" role="button">Publier l'annonce</a>
+            <footer>
+                <a class="btn btn-dark" href="annonce_nouv.php" role="button">Publier l'annonce</a>
+            </footer>
         </section>
         <!-- FORMULAIRE -->
 

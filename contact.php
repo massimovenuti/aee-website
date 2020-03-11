@@ -2,42 +2,34 @@
 <html lang="fr">
     <head>
         <?php include("templates/meta.php"); ?>
+        <link rel="stylesheet" href="assets/css/form.css">
         <title>Contact | Association des Étudiants Étrangers</title>
     </head>
     <body>
-        <!-- NAVBAR -->
-        <?php include("templates/navbar.php"); ?>
-        <!-- NAVBAR -->
-
         <!-- HEADER -->
-        <header class="container">
-            <h2>Contact</h2>
-        </header>
+        <?php include("templates/header.php"); ?>
         <!-- HEADER -->
 
         <!-- FORMULAIRE -->
-        <section class="container">
+        <section class="container tuile">
+            <header>
+                <h2>Contact</h2>
+            </header>
             <form>
-                <div class="form-group">
-                    <div class="form-group">
-                        <div class="form-row">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Prénom">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Nom">
-                            </div>
-                        </div>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Prénom">
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Adresse mail">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" rows="10" placeholder="Votre message"></textarea>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nom">
                     </div>
                 </div>
+                <input type="text" class="form-control" placeholder="Adresse mail">
+                <textarea class="form-control" rows="10" placeholder="Votre message"></textarea>
             </form>
-            <a class="btn btn-dark" href="annonce_nouv.php" role="button">Envoyer</a>
+            <footer>
+                <a class="btn btn-dark" href="annonce_nouv.php" role="button">Envoyer</a>
+            </footer>
         </section>
         <!-- FORMULAIRE -->
 

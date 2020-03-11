@@ -45,3 +45,50 @@
 * `clone` : `git clone <url du repository>`
 * `commit` : `git add . && git commit -m "<message de commit>"`
 * `push`: `git push origin <nom de la branche>`
+
+## Description
+
+![Description-img.png](/Users/massimo/Sites/projet-s4/Description-img.png)
+
+### Page 1 - Accueil
+
+- Fichier index.php
+- Dernières annonces sous forme de cartes
+- Lien vers la page d'annonces
+- Carrousel avec des photos de l’association, des adhérents, des évènements, etc...
+- Page dynamique
+
+### Page 2 - Qui sommes nous ?
+
+- Fichier description.php
+- Série de photos et de paragraphes pour présenter l’association
+- Page statique
+
+### Page 3 - Annonces
+
+- Fichier annonces.php
+- Toutes les annonces sont affichées les unes après les autres
+- Les dernières annonces sont affichées en premières
+- Chaque annonce a une image associée
+- Bouton « ajouter une annonce » qui redirige vers la page de création d’annonce
+- Barre de recherche pour rechercher une annonce
+- Page dynamique
+
+### Page 4 - Créer une annonce
+
+- Fichier nouv.php
+- Formulaire
+
+### Page 5 - Détails d'une annonce
+
+- Fichier details.php
+- Annonce sur la gauche avec son image et son titre
+- Lien vers d'autres annonces à droite avec barre de recherche
+
+### Page 6 - Contact
+
+- Formulaire de contact
+
+**Navbar** : un élément dropdown pour choisir la langue
+
+**Footer** : liens vers les réseaux sociaux sous forme d'icone

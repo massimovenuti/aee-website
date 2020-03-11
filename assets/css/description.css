@@ -1,0 +1,22 @@
+article section {
+    margin-top: 5vh;
+    padding-left:1rem;
+    padding-right:1rem;
+    font-size: 1.1rem;
+    align-items: center;
+}
+
+article section img {
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    width: 90%;
+}
+
+article section div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+   
+

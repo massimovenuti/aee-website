@@ -2,62 +2,80 @@
 <html lang="fr">
     <head>
         <?php include("templates/meta.php"); ?>
-        <link rel="stylesheet" href="assets/css/index_style.css">
+        <link rel="stylesheet" href="assets/css/index.css">
         <title>AEE | Association des Étudiants Étrangers</title>
     </head>
     <body>
-        <!-- NAVBAR -->
-        <?php include("templates/navbar.php"); ?>
-        <!-- NAVBAR -->
-
         <!-- HEADER -->
-        <header class="container">
-            <h2>Dernières annonces</h2>
-        </header>
+        <?php include("templates/header.php"); ?>
         <!-- HEADER -->
 
         <!-- DERNIERES ANNONCES -->
-        <section class="container">
-            <div class="row">
-                <div class="col-12 cards">
-                    <div class="card" style="width:80%;">
+        <section class="container tuile">
+            <header>
+                <h2>Dernières annonces</h2>
+            </header>
+            <!-- CARDS -->
+            <div class="cards row">
+                <div class="col-12 col-lg-6">
+                    <!-- CARD 1 -->
+                    <article class="card shadow-sm">
                         <img src="assets/img/annonce.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Titre</h5>
-                            <p class="card-text">Lorem incididunt veniam aliqua nostrud cupidatat irure officia aliqua. Culpa magna culpa consequat sit incididunt culpa nulla officia reprehenderit esse. Laborum aliquip fugiat proident tempor nulla ipsum eu anim sunt. Non ea pariatur est ea aliqua laborum adipisicing fugiat aliqua labore elit minim consequat. Proident sint sunt ex minim consequat amet adipisicing sit. Non tempor labore deserunt exercitation adipisicing sit amet ut eu. Laboris enim duis irure ullamco incididunt esse sint laboris et est fugiat veniam.</p>
+                            <h3 class="card-title">Titre</h3>
+                            <p class="card-text">
+                                Lorem tempor nulla ipsum eu anim sunt. Non ea pariatur est ea aliqu sit amet ut eu. Laboris enim duis 
+                                irure ullamco incididunt esse sint laboris et est fugiat veniam.
+                            </p>
+                            <a href="details.php">Détails</a>
                         </div>
-                    </div>
+                    </article>
+                    <!-- CARD 1 -->
                 </div>
-                <div class="col-12 cards">
-                    <div class="card" style="width: 80%;">
-                        <img src="assets/img/annonce2.jpg" class="card-img-top" alt="...">
+                <div class="col-12 col-lg-6">
+                    <!-- CARD 2 -->
+                    <article class="card shadow-sm">
+                        <img src="assets/img/annonce.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Titre</h5>
-                            <p class="card-text">Lorem incididunt veniam aliqua nostrud cupidatat irure officia aliqua. Culpa magna culpa consequat sit incididunt culpa nulla officia reprehenderit esse. Laborum aliquip fugiat proident tempor nulla ipsum eu anim sunt. Non ea pariatur est ea aliqua laborum adipisicing fugiat aliqua labore elit minim consequat. Proident sint sunt ex minim consequat amet adipisicing sit. Non tempor labore deserunt exercitation adipisicing sit amet ut eu. Laboris enim duis irure ullamco incididunt esse sint laboris et est fugiat veniam.</p>
+                            <h3 class="card-title">Titre</h3>
+                            <p class="card-text">
+                                Lorem incididunt veniam aliqua nostrud cupidataagna. Non ea pariatur est ea aliqua laborum adipisicing 
+                                fugiat aliqua labore elit minim consequat. Proident sint sunt ex minim consequat amet adipisicing sit. 
+                                Non tempor labore deserunt exercitation adipisicing sit amet ut eu. 
+                            </p>
+                            <a href="details.php">Détails</a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-12 annonces-link">
-                    <a href="annonces.php">Voir toutes les annonces</a>
+                    </article>
+                    <!-- CARD 2 -->
                 </div>
             </div>
+            <!-- CARDS -->
+            <footer>
+                <a href="annonces.php" class="btn btn-dark">Voir toutes les annonces</a>
+            </footer>
         </section>
         <!-- DERNIERES ANNONCES -->
 
         <!-- GALERIE -->
         <section class="container-fluid galerie">
-            <div class="col-12 carous">
+            <div class="col-12">
                 <div id="carouselExampleControls" class="carousel slide" data-interval="100000" data-pause="hover">
                     <div class="carousel-inner">
+                        <!-- SLIDE 1 -->
                         <div class="carousel-item active">
                             <img src="assets/img/gal1.jpg" class="d-block w-100" alt="...">
                         </div>
+                        <!-- SLIDE 1 -->
+                        <!-- SLIDE 2 -->
                         <div class="carousel-item">
                             <img src="assets/img/gal2.jpg" class="d-block w-100" alt="...">
                         </div>
+                        <!-- SLIDE 2 -->
+                        <!-- SLIDE 3 -->
                         <div class="carousel-item">
                             <img src="assets/img/gal.jpg" class="d-block w-100" alt="...">
                         </div>
+                        <!-- SLIDE 3 -->
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

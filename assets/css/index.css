@@ -1,0 +1,39 @@
+/* DERNIERES ANNONCES */
+section article {
+    width:90%;
+    margin:auto;
+    border-top-right-radius: 1vw!important;
+    border-bottom-right-radius: 1vw!important;
+    border-top-left-radius: 1vw!important;
+    border-bottom-left-radius: 1vw!important;
+    margin-top: 5vh;
+    overflow: hidden;
+}
+
+section article img {
+    height: 20vh;
+    object-fit: cover;
+}
+
+section footer {
+    margin-top: 7vh;
+}
+/* DERNIERES ANNONCES */
+
+/* GALERIE */
+.galerie {
+    margin-top: 15vh;
+    background-color: #fff;
+    margin-bottom: -15vh;
+    padding:15vh 0 15vh 0;
+}
+
+.galerie .col-12 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.galerie .carousel-inner {
+    height: 90vh;
+}
+/* GALERIE */

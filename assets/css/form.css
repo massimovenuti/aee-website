@@ -1,0 +1,12 @@
+section form {
+    margin-top: 5vh;
+}
+
+section form > * {
+    margin-bottom: 1rem;
+}
+
+section footer {
+    text-align: end;
+    margin-top: -1rem;
+}

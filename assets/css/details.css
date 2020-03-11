@@ -1,0 +1,67 @@
+/* ASIDE */
+article header {
+    margin-bottom: 2rem;
+}
+
+article p {
+    font-size: 1.1rem;
+}
+
+article header h2 {
+    margin-top: 1.5rem;
+}
+
+article header img {
+    width: 100%;
+    max-height: 30vh;
+    object-fit: cover;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+}
+
+.tuile {
+    padding-left: 4vw;
+    padding-right: 4vw
+}
+/* ANNONCE */
+
+/* ASIDE */
+aside {
+    padding-left: 1vw!important;
+    padding-right: 1vw!important;
+}
+
+aside header input {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%!important;
+}
+
+aside article {
+    /* Borders */
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    /* Margin */
+    margin-top: 3vh;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* Size */
+    overflow: hidden;
+    width: 90%;
+}
+
+aside article h3 {
+    font-size: 1.1rem;
+}
+
+aside article a {
+    font-size: 0.9rem;
+}
+/* ASIDE */

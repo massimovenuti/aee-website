@@ -2,51 +2,79 @@
 <html lang="fr">
     <head>
         <?php include("templates/meta.php"); ?>
-        <link rel="stylesheet" href="assets/css/annonces_style.css">
+        <link rel="stylesheet" href="assets/css/annonces.css">
         <title>Annonces | Association des Étudiants Étrangers</title>
     </head>
     <body>
-        <!-- NAVBAR -->
-        <?php include("templates/navbar.php"); ?>
-        <!-- NAVBAR -->
-
         <!-- HEADER -->
-        <header class="container">
-            <h2>Annonces</h2>
-        </header>
+        <?php include("templates/header.php"); ?>
         <!-- HEADER -->
 
         <!-- ANNONCES -->
-        <section class="container">
-            <div class="row annonces">
-                <div class="col-12 bouton">
-                    <a class="btn btn-dark" href="annonce_nouv.php" role="button">Ajouter une annonce</a>
+        <section class="container tuile">
+            <header>
+                <h2>Annonces</h2>
+                <input type="text" class="form-control" placeholder="Rechercher">
+                <a class="btn btn-dark" href="nouv.php" role="button">Ajouter une annonce</a>
+            </header>
+            <!-- CARDS -->
+            <div class="row">
+                <div class="col-12">
+                    <!-- CARD 1 -->
+                    <article class="row shadow-sm">
+                            <div class="col-12 col-lg-3 annonce-img">
+                                <img src="assets/img/annonce.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-lg-9">
+                                <h3>Annonce 1</h3>
+                                <p>
+                                    Lorem tempor nulla ipsum eu anim sunt. Non ea pariatur est ea aliqu sit amet ut eu. Laboris enim duis irure 
+                                    ullamco incididunt esse sint laboris et est fugiat veniam.
+                                </p>
+                                <a href="details.php">Plus de détails</a>                
+                            </div>
+                    </article>
+                    <!-- CARD 1 -->
                 </div>
-
-                <div class="col-3 annonce-img">
-                    <img src="assets/img/annonce.jpg" alt="">
+                <div class="col-12">
+                    <!-- CARD 2 -->
+                    <article class="row shadow-sm">
+                        <div class="col-12 col-lg-3 annonce-img">
+                            <img src="assets/img/annonce.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-lg-9">
+                            <h3>Annonce 2</h3>
+                            <p>
+                                Lorem incididunt veniam aliqua nostrud cupidataagna. Non ea pariatur est ea aliqua laborum adipisicing fugiat
+                                aliqua labore elit minim consequat. Proident sint sunt ex minim consequat amet adipisicing sit. Non tempor 
+                                labore deserunt exercitation adipisicing sit amet ut eu. Laboris enim duis irure ullamco incididunt 
+                                esse sint laboris et est fugiat veniam.
+                            </p>
+                            <a href="details.php">Plus de détails</a>                
+                        </div>
+                    </article>
+                    <!-- CARD 2 -->
                 </div>
-                <div class="col-9 annonce-txt">
-                    <h3>Annonce 1</h3>
-                    <p>Lorem tempor nulla ipsum eu anim sunt. Non ea pariatur est ea aliqua laborum adipisicing fugiat aliqua labore elit minim consequat. Proident sint sunt ex minim consequat amet adipisicing sit. Non tempor labore deserunt exercitation adipisicing sit amet ut eu. Laboris enim duis irure ullamco incididunt esse sint laboris et est fugiat veniam.</p>
-                </div>
-
-                <div class="col-3 annonce-img">
-                    <img src="assets/img/annonce.jpg" alt="">
-                </div>
-                <div class="col-9 annonce-txt">
-                    <h3>Annonce 2</h3>
-                    <p>Lorem incididunt veniam aliqua nostrud cupidatat irure officia aliqua. Culpa magna culLorem incididunt veniam aliqua nostrud cupidatat irure officia aliqua. Culpa magna culpa consequat sit incididunt culpa nulla officia reprehenderit esse. Laborum aliquip fugiat proident tempor nulla ipsum eu anim sunt. Non ea pariatur est ea aliqua laborum adipisicing fugiat aliqua labore elit minim consequat. Proident sint sunt ex minim consequat amet adipisicing sit. Non tempor labore deserunt exercitation adipisicing sit amet ut eu. Laboris enim duis irure ullamco incididunt esse sint laboris et est fugiat veniam.</p>
-                </div>
-
-                <div class="col-3 annonce-img">
-                    <img src="assets/img/annonce.jpg" alt="">
-                </div>
-                <div class="col-9 annonce-txt">
-                    <h3>Annonce 3</h3>
-                    <p>Lorem incididunt veniam aliqua nostrud cupidatat irure officia aliqua. Culpa magna culpa consequat sit incididunt culpa nulla officia reprehenderit esse. Laborum aliquip fugiat proident tempor nulla ipsum eu anim sunt. Non ea pariatur est ea aliqua laborum adipisicing fugiat aliqua labore elit minim consequat. Proident sint sunt ex minim consequat amet adipisicing sit. Non tempor labore deserunt exercitation adipisicing sit amet ut eu. Laboris enim duis irure ullamco incididunt esse sint laboris et est fugiat veniam.</p>
+                <div class="col-12">
+                    <!-- CARD 3 -->
+                    <article class="row shadow-sm">
+                        <div class="col-12 col-lg-3 annonce-img">
+                            <img src="assets/img/annonce.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-lg-9">
+                            <h3>Annonce 3</h3>
+                            <p>
+                                Lorem incididunt veniam aliqua nostlpa consequat. Proident sint sunt ex minim consequat amet adipisicing 
+                                sit. Non tempor labore deserunt exercitation adipisicing sit amet ut eu. Laboris enim duis irure ullamco 
+                                incididunt esse sint laboris et est fugiat veniam.
+                            </p>
+                            <a href="details.php">Plus de détails</a>                
+                        </div>
+                    </article>
+                    <!-- CARD 3 -->
                 </div>
             </div>
+            <!-- CARDS -->
         </section>
         <!-- ANNONCES -->
 
