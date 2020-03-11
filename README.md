@@ -48,7 +48,7 @@
 
 ## Description
 
-![Description-img.png](/Users/massimo/Sites/projet-s4/Description-img.png)
+![Description-img.png](./Description-img.png)
 
 ### Page 1 - Accueil
 
