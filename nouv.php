@@ -7,13 +7,7 @@
     </head>
     <body>
         <!-- HEADER -->
-<<<<<<< HEAD:nouv.php
         <?php include("templates/header.php"); ?>
-=======
-        <header>
-            <h2>Nouvelle annonce</h2>
-        </header>
->>>>>>> parent of af11246... Commit de fin de journée - 05/03/2020:annonce_nouv.php
         <!-- HEADER -->
 
         <!-- FORMULAIRE -->
@@ -28,13 +22,9 @@
                 <label for="exampleFormControlFile1">Image</label>
                 <input type="file" class="form-control-file">
             </form>
-<<<<<<< HEAD:nouv.php
             <footer>
                 <a class="btn btn-dark" href="annonce_nouv.php" role="button">Publier l'annonce</a>
             </footer>
-=======
-            <a class="btn btn-primary" href="annonce_nouv.php" role="button">Publier l'annonce</a>
->>>>>>> parent of af11246... Commit de fin de journée - 05/03/2020:annonce_nouv.php
         </section>
         <!-- FORMULAIRE -->
 

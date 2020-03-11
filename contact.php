@@ -7,13 +7,7 @@
     </head>
     <body>
         <!-- HEADER -->
-<<<<<<< HEAD
         <?php include("templates/header.php"); ?>
-=======
-        <header>
-            <h2>Contact</h2>
-        </header>
->>>>>>> parent of af11246... Commit de fin de journée - 05/03/2020
         <!-- HEADER -->
 
         <!-- FORMULAIRE -->
@@ -33,13 +27,9 @@
                 <input type="text" class="form-control" placeholder="Adresse mail">
                 <textarea class="form-control" rows="10" placeholder="Votre message"></textarea>
             </form>
-<<<<<<< HEAD
             <footer>
                 <a class="btn btn-dark" href="annonce_nouv.php" role="button">Envoyer</a>
             </footer>
-=======
-            <a class="btn btn-primary" href="annonce_nouv.php" role="button">Envoyer</a>
->>>>>>> parent of af11246... Commit de fin de journée - 05/03/2020
         </section>
         <!-- FORMULAIRE -->
 
