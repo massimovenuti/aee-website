@@ -1,0 +1,40 @@
+/* TEXTE */
+.annonce-txt {
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 20px;
+    border-top-right-radius: calc(.25rem - 1px);
+    border-bottom-right-radius: calc(.25rem - 1px);
+    overflow: scroll;
+}
+/* TEXTE */
+
+/* IMAGES */
+.annonce-img {
+    padding: 0;
+}
+.annonce-img img {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-bottom-left-radius: calc(.25rem - 1px);
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* IMAGES */
+
+/* BOUTON */
+.bouton {
+    text-align: end;
+    margin-bottom: -30px;
+}
+/* BOUTON */
+
+/* COLONNES */
+.annonces {
+    margin-top: 20px;
+}
+.annonce-txt, .annonce-img {
+    margin-top: 40px;
+    max-height: 300px;
+}
+/* COLONNES */
+

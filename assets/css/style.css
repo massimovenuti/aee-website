@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* BODY */
 body {
     background: rgb(205,8,131);
@@ -18,18 +19,35 @@ header h1 {
 
 header .navbar {
     background-color: #fff!important;
+=======
+/* NAVBAR */
+.navbar-brand {
+    margin-left: 20px;
+>>>>>>> parent of af11246... Commit de fin de journée - 05/03/2020
 }
 
 header .navbar-nav {
     margin-left: auto;
     margin-right: auto;
 }
+<<<<<<< HEAD
+=======
+.nav-item {
+    margin-left:15px;
+}
+.titre-1 {
+    margin-top:20px;
+    text-align: center;
+}
+/* NAVBAR */
+>>>>>>> parent of af11246... Commit de fin de journée - 05/03/2020
 
 header .nav-item {
     margin-left:8px;
     margin-right:8px;
 }
 /* HEADER */
+<<<<<<< HEAD
 
 /* TUILE */
 .tuile {
@@ -47,12 +65,22 @@ header .nav-item {
     margin-right: auto!important;
     /* Bg */
     background-color: #fff; 
+=======
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+header .row {
+    text-align: center;
+>>>>>>> parent of af11246... Commit de fin de journée - 05/03/2020
 }
 /* TUILE */
 
 /* FOOTER */
 footer {
     text-align: center;
+<<<<<<< HEAD
     margin-top: 15vh;
     padding-top: 5vh;
     background-color: #fff;
@@ -62,4 +90,14 @@ footer img {
     height:40px;
     margin-bottom:0.5rem;
 }
+=======
+    margin-top: 100px;
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+}
+.icon{
+    height:40px!important;
+}
+>>>>>>> parent of af11246... Commit de fin de journée - 05/03/2020
 /* FOOTER */
