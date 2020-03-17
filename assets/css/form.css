@@ -2,11 +2,19 @@ section form {
     margin-top: 5vh;
 }
 
-section form > * {
-    margin-bottom: 1rem;
+section form button {
+    margin-top: 1rem;
 }
 
-section footer {
-    text-align: end;
-    margin-top: -1rem;
+section form div label.error {
+    color:red;
+}
+
+section form div input.error, section form div textarea.error {
+    border: 1px inset red;
+    background-color: rgba(255, 0, 0, 0.01);
+}
+
+.hidden {
+    display: none;
 }
