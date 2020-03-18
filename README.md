@@ -55,7 +55,8 @@
 - Fichier index.php
 - Dernières annonces sous forme de cartes
 - Lien vers la page d'annonces
-- Carrousel avec des photos de l’association, des adhérents, des évènements, etc...
+- Pour chaque annonce, lien vers la page qui la détaille
+- Carrousel avec des photos de l’association / des adhérents / des évènements / etc...
 - Page dynamique
 
 ### Page 2 - Qui sommes nous ?
@@ -78,17 +79,20 @@
 
 - Fichier nouv.php
 - Formulaire
+- Le format du fichier fourni devra obligatoirement être celui d'une image sinon le formulaire ne sera pas validé
+- Page dynamique
 
 ### Page 5 - Détails d'une annonce
 
 - Fichier details.php
 - Annonce sur la gauche avec son image et son titre
 - Lien vers d'autres annonces à droite avec barre de recherche
+- Page dynamique
 
 ### Page 6 - Contact
 
 - Formulaire de contact
 
-**Navbar** : un élément dropdown pour choisir la langue
+**Navbar** : un élément dynamique pour choisir la langue
 
 **Footer** : liens vers les réseaux sociaux sous forme d'icone
