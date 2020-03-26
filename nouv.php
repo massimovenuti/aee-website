@@ -1,3 +1,5 @@
+<?php include 'form_nouv.php'; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
