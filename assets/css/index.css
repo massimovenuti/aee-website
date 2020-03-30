@@ -1,12 +1,8 @@
-/* DERNIERES ANNONCES */
+/* DERNIÈRES ANNONCES */
 section article {
     width:90%;
-    margin:auto;
-    border-top-right-radius: 1vw!important;
-    border-bottom-right-radius: 1vw!important;
-    border-top-left-radius: 1vw!important;
-    border-bottom-left-radius: 1vw!important;
-    margin-top: 5vh;
+    border-radius: 1vw!important;
+    margin: 5vh auto auto;
     overflow: hidden;
 }
 
@@ -15,10 +11,17 @@ section article img {
     object-fit: cover;
 }
 
-section footer {
-    margin-top: 7vh;
+section .cards > div:last-of-type {
+    text-align: center;
+    margin-top: 2rem;
 }
-/* DERNIERES ANNONCES */
+
+section .cards  > p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+/* DERNIÈRES ANNONCES */
 
 /* GALERIE */
 .galerie {

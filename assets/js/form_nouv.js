@@ -17,7 +17,7 @@ document.querySelector('section form button')
 
         let titreInput = document.getElementById('titre');
         let resumeInput = document.getElementById('resume');
-        let annonceInput = document.getElementById('annonce');
+        let contenuInput = document.getElementById('contenu');
         let imageInput = document.getElementById('image');
 
         if (titreInput.value === '') {
@@ -34,12 +34,12 @@ document.querySelector('section form button')
         }
         resumeInput.addEventListener('input', inputVerif);
 
-        if (annonceInput.value === '') {
-            annonceInput.classList.add('error');
-            annonceInput.previousElementSibling.classList.add('error');
+        if (contenuInput.value === '') {
+            contenuInput.classList.add('error');
+            contenuInput.previousElementSibling.classList.add('error');
             error = true;
         }
-        annonceInput.addEventListener('input', inputVerif);
+        contenuInput.addEventListener('input', inputVerif);
 
         if (imageInput.value.match(/\.(gif|jpe?g|tiff|png|webp|bmp)$/) === null) {
             imageInput.classList.add('error');

@@ -1,7 +1,7 @@
 <?php
 $titre = htmlspecialchars($_POST['titre']);
 $resume = htmlspecialchars($_POST['resume']);
-$annonce = htmlspecialchars( $_POST['annonce']);
+$contenu = htmlspecialchars( $_POST['contenu']);
 $image = htmlspecialchars($_POST['image']);
 
 try {
@@ -11,23 +11,23 @@ try {
 
     // Méthode query : permet d'écrire du SQL.
     $pdo->query(
-        'CREATE TABLE IF NOT EXISTS annonce (
+        'CREATE TABLE IF NOT EXISTS annonces (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             titre TEXT NOT NULL,
             resume TEXT NOT NULL,
-            annonce TEXT NOT NULL,
+            contenu TEXT NOT NULL,
             image VARCHAR(150) NOT NULL
             )'
     );
 
-    if ($titre && $resume && $annonce && $image) {
+    if ($titre && $resume && $contenu && $image) {
         // Méthode prepare : insérer des éléments dans une base de donnée ou faire un SELECT
         $statement = $pdo->prepare(
-            'INSERT INTO annonce (titre, resume, annonce, image) VALUES (:titre, :resume, :annonce, :image)'
+            'INSERT INTO annonces (titre, resume, contenu, image) VALUES (:titre, :resume, :contenu, :image)'
         );
         $statement->bindParam('titre', $titre, PDO::PARAM_STR);
         $statement->bindParam('resume', $resume, PDO::PARAM_STR);
-        $statement->bindParam('annonce', $annonce, PDO::PARAM_STR);
+        $statement->bindParam('contenu', $contenu, PDO::PARAM_STR);
         $statement->bindParam('image', $image, PDO::PARAM_STR);
         $statement->execute();
     }

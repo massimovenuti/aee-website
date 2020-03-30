@@ -1,22 +1,13 @@
-section header {
-    text-align:end;
-}
 
-section h2 {
-    text-align: center;
-}
-
-section header input {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+section header form input, section header form a {
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    width: 100%;
 }
 
 section article {
     /* Borders */
-    border-top-right-radius: 1vw;
-    border-bottom-right-radius: 1vw;
-    border-top-left-radius: 1vw;
-    border-bottom-left-radius: 1vw;
+    border-radius: 1vw;
     /* Margin */
     margin-top: 7vh;
     overflow: hidden;
@@ -38,7 +29,7 @@ section article img {
     object-fit: cover;
 }
 
-section article .annonce-img {
+section article div:first-of-type {
     padding: 0!important;
 }
 
