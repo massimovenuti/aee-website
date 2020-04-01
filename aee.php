@@ -2,13 +2,11 @@
 <html lang="fr">
 <head>
     <?php include("templates/meta.php"); ?>
-    <link rel="stylesheet" href="assets/css/description.css">
+    <link rel="stylesheet" href="assets/css/aee.css">
     <title>Qui sommes-nous ? | Association des Étudiants Étrangers</title>
 </head>
 <body>
-    <!-- HEADER -->
     <?php include("templates/header.php"); ?>
-    <!-- HEADER -->
 
    <!-- DESCRIPTION -->
    <article class="container tuile">
@@ -61,10 +59,9 @@
     </article>
     <!-- DESCRIPTION -->
 
-    <!-- FOOTER -->
-    <?php include("templates/footer.php"); ?>
-    <!-- FOOTER -->
-
-    <?php include("templates/scripts.php");?>
+    <?php
+    include 'templates/footer.php';
+    include("templates/scripts.php");
+    ?>
 </body>
 </html>

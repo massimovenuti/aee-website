@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,20 +6,20 @@
     <title>AEE | Association des Étudiants Étrangers</title>
 </head>
 <body>
-    <!-- HEADER -->
-    <?php include 'templates/header.php'; ?>
-    <!-- HEADER -->
+    <?php
+    include 'templates/header.php';
+    include 'assets/php/annonces_get.php';
+    $annonces = get_annonces();
+    ?>
 
     <!-- DERNIÈRES ANNONCES -->
     <section class="container tuile">
         <header>
             <h2>Dernières annonces</h2>
         </header>
-
         <!-- CARDS -->
         <div class="cards row">
             <?php
-            include 'recherche.php';
             if (count($annonces) > 0) {
                 for ($i = 0; $i < count($annonces) && $i < 2; $i++) { ?>
                     <div class="col-12 col-lg-6">
@@ -29,7 +28,7 @@
                             <div class="card-body">
                                 <h3 class="card-title"><?= $annonces[$i]['titre']; ?></h3>
                                 <p class="card-text"><?= $annonces[$i]['resume']; ?></p>
-                                <a href="details.php?id=<?= $annonces[$i]['id']; ?>">Détails</a>
+                                <a href="annonces_details.php?id=<?= $annonces[$i]['id']; ?>">Détails</a>
                             </div>
                         </article>
                     </div>
@@ -80,9 +79,9 @@
     <!-- GALERIE -->
 
     <!-- FOOTER -->
-    <?php include("templates/footer.php"); ?>
-    <!-- FOOTER -->
-
-    <?php include("templates/scripts.php");?>
+    <?php
+    include 'templates/footer.php';
+    include 'templates/scripts.php';
+    ?>
 </body>
 </html>

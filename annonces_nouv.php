@@ -1,22 +1,20 @@
-<?php include 'form_nouv.php'; ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <?php include("templates/meta.php"); ?>
+    <?php include 'templates/meta.php'; ?>
     <link rel="stylesheet" href="assets/css/form.css">
     <title>Ajouter une annonce | Association des Étudiants Étrangers</title>
 </head>
 <body>
-    <!-- HEADER -->
-    <?php include("templates/header.php"); ?>
-    <!-- HEADER -->
+    <?php include 'templates/header.php'; ?>
 
     <!-- FORMULAIRE -->
     <section class="container tuile">
         <header>
             <h2>Nouvelle annonce</h2>
         </header>
+
+        <?php include 'assets/php/annonces_envoi.php'; ?>
         <form method="post">
             <div class="form-group">
                 <label for="titre">Titre</label>
@@ -42,11 +40,10 @@
     </section>
     <!-- FORMULAIRE -->
 
-    <!-- FOOTER -->
-    <?php include("templates/footer.php"); ?>
-    <!-- FOOTER -->
-
-    <?php include("templates/scripts.php");?>
-    <script src="assets/js/form_nouv.js"></script>
+    <?php
+    include 'templates/footer.php';
+    include 'templates/scripts.php';
+    ?>
+    <script src="assets/js/annonces_nouv.js"></script>
 </body>
 </html>

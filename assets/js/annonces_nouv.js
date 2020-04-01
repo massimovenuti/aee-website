@@ -60,7 +60,6 @@ document.querySelector('section form button')
 
         if (!error) {
             document.querySelector('section form').submit();
-            alert('Annonce publiée !');
         }
         else {
             document.querySelector('section form .alert').classList.remove('hidden');

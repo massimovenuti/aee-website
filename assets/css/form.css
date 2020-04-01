@@ -18,3 +18,7 @@ section form div input.error, section form div textarea.error {
 .hidden {
     display: none;
 }
+
+.alert-success {
+    margin-top:2rem;
+}

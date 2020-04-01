@@ -16,7 +16,7 @@
                 </li>
                 <li class="nav-item">
                     <!-- QUI SOMMES-NOUS -->
-                    <a class="nav-link" href="/projet-s4/description.php">QUI SOMMES NOUS ?</a>
+                    <a class="nav-link" href="/projet-s4/aee.php">QUI SOMMES NOUS ?</a>
                     <!-- QUI SOMMES-NOUS -->
                 </li>
                 <li class="nav-item">
