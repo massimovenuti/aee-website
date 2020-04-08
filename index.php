@@ -24,7 +24,7 @@
                 for ($i = 0; $i < count($annonces) && $i < 2; $i++) { ?>
                     <div class="col-12 col-lg-6">
                         <article class="card shadow-sm">
-                            <img src="assets/img/annonce.jpg" class="card-img-top" alt="...">
+                            <img src="assets/img/<?= $annonces[$i]['image']; ?>" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h3 class="card-title"><?= $annonces[$i]['titre']; ?></h3>
                                 <p class="card-text"><?= $annonces[$i]['resume']; ?></p>

@@ -1,5 +1,5 @@
 section form {
-    margin-top: 5vh;
+    margin-top: 2rem;
 }
 
 section form button {
@@ -20,5 +20,5 @@ section form div input.error, section form div textarea.error {
 }
 
 .alert-success {
-    margin-top:2rem;
+    margin-top: 2rem;
 }

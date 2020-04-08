@@ -14,15 +14,16 @@
     if ($query)
         $annonces = get_annonces_by_content($query);
     $annonce = get_annonces_by_id($id);
+    $annonces = get_annonces();
     ?>
 
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-8">
                 <!-- ANNONCE -->
-                <article class="tuile">
+                <article class="tuile" id="details">
                     <header>
-                        <img src="assets/img/annonce.jpg" alt="">
+                        <img src="assets/img/<?= $annonce[0]['image']; ?>" alt="">
                         <h2><?= $annonce[0]['titre']; ?></h2>
                     </header>
                     <div>

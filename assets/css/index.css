@@ -1,8 +1,8 @@
 /* DERNIÈRES ANNONCES */
 section article {
-    width:90%;
+    width: 90%;
     border-radius: 1vw!important;
-    margin: 5vh auto auto;
+    margin: 2rem auto auto;
     overflow: hidden;
 }
 
@@ -25,10 +25,9 @@ section .cards  > p {
 
 /* GALERIE */
 .galerie {
-    margin-top: 15vh;
     background-color: #fff;
-    margin-bottom: -15vh;
-    padding:15vh 0 15vh 0;
+    margin-bottom: -5rem;
+    padding: 5rem 0 5rem 0;
 }
 
 .galerie .col-12 {
@@ -37,6 +36,6 @@ section .cards  > p {
 }
 
 .galerie .carousel-inner {
-    height: 90vh;
+    max-height: 80vh;
 }
 /* GALERIE */

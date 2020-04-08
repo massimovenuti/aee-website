@@ -15,7 +15,7 @@
         </header>
 
         <?php include 'assets/php/annonces_envoi.php'; ?>
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="titre">Titre</label>
                 <input type="text" id="titre" name="titre" class="form-control">

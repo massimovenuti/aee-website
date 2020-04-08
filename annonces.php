@@ -42,7 +42,7 @@
                     <div class="col-12">
                         <article class="row shadow-sm">
                                 <div class="col-12 col-lg-3">
-                                    <img src="assets/img/annonce.jpg" alt="">
+                                    <img src="assets/img/<?= $annonce['image']; ?>" alt="">
                                 </div>
                                 <div class="col-12 col-lg-9">
                                     <h3><?= $annonce['titre']; ?></h3>

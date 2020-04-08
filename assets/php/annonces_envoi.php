@@ -2,7 +2,7 @@
 $titre = htmlspecialchars($_POST['titre']);
 $resume = htmlspecialchars($_POST['resume']);
 $contenu = htmlspecialchars( $_POST['contenu']);
-$image = htmlspecialchars($_POST['image']);
+$image = htmlspecialchars(basename($_FILES['image']['name']));
 
 try {
     // Connexion à la base de données
@@ -23,22 +23,23 @@ try {
 
     // Insertion des éléments dans la table
     if ($titre && $resume && $contenu && $image) {
-        move_uploaded_file($_FILES['image']['tmp_name'], '../' . basename($_FILES['image']['name']));
-        $statement = $pdo->prepare(
-            'INSERT INTO annonces (titre, resume, contenu, image) VALUES (:titre, :resume, :contenu, :image)'
-        );
+        if (move_uploaded_file($_FILES['image']['tmp_name'], dirname(__FILE__) . '/../img/' . $image)) {
+            $statement = $pdo->prepare(
+                'INSERT INTO annonces (titre, resume, contenu, image) VALUES (:titre, :resume, :contenu, :image)'
+            );
 
-        $statement->bindParam('titre', $titre, PDO::PARAM_STR);
-        $statement->bindParam('resume', $resume, PDO::PARAM_STR);
-        $statement->bindParam('contenu', $contenu, PDO::PARAM_STR);
-        $statement->bindParam('image', $image, PDO::PARAM_STR);
-        $statement->execute();
-        ?>
+            $statement->bindParam('titre', $titre, PDO::PARAM_STR);
+            $statement->bindParam('resume', $resume, PDO::PARAM_STR);
+            $statement->bindParam('contenu', $contenu, PDO::PARAM_STR);
+            $statement->bindParam('image', $image, PDO::PARAM_STR);
+            $statement->execute();
+            ?>
 
-        <div class="alert alert-success" role="alert">
-            Annonce publiée !
-        </div>
-        <?php
+            <div class="alert alert-success" role="alert">
+                Annonce publiée !
+            </div>
+            <?php
+        }
     }
 } catch(PDOException $exception) {
     var_dump($exception);
