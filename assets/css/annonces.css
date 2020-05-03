@@ -1,19 +1,18 @@
-
+/*-- HEADER --*/
 section header form input, section header form a {
     margin-top:1rem;
     margin-bottom: 1rem;
     width: 100%;
 }
+/*-- HEADER --*/
 
+/*-- ANNONCES --*/
 section article {
-    /* Borders */
     border-radius: 1vw;
-    /* Margin */
     margin-top: 3rem;
     overflow: hidden;
     margin-left: auto!important;
     margin-right: auto!important;
-    /* Size */
     width: 80%;
 }
 
@@ -36,3 +35,11 @@ section article div:first-of-type {
 section article > * {
     padding: 1rem;
 }
+
+
+section > div:last-of-type {
+    text-align: center;
+    margin-top:2rem;
+}
+/*-- ANNONCES --*/
+

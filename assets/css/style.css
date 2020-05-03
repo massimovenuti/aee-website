@@ -1,62 +1,64 @@
-/* BODY */
+/*-- BODY --*/
 body {
-    background: rgb(205,8,131);
-    background: linear-gradient(90deg, rgba(205,8,131,1) 0%, rgba(192,4,165,1) 25%, rgba(165,3,183,1) 50%, 
-                                        rgba(122,12,188,1) 75%, rgba(83,10,192,1) 100%);
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(182,0,193,1) 100%);
 }
-/* BODY */
+/*-- BODY --*/
 
-/* CONTAINER */
-@media (min-width: 1200px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1200px;
-    }
-}
-/* CONTAINER */
-
-/* HEADER */
-header {
-    background-color: #fff;
-    text-align: center;
+/*-- HEADER --*/
+header nav {
+    padding-top: 1.2rem!important;
+    padding-bottom: 1.2rem!important;
+    background-color: white;
 }
 
-header h1 {
-    padding-top: 2rem;
+header nav .btn {
+    color:black;
+    background: transparent;
+    border-color: black;
 }
-
-header .navbar {
-    background-color: #fff!important;
-}
-
-header .navbar-nav {
-    margin-left: auto;
+header nav ul {
     margin-right: auto;
 }
 
-header .nav-item {
-    margin-left: 1rem;
-    margin-right: 1rem;
+header nav ul li {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
 }
-/* HEADER */
 
-/* TUILE */
+header nav ul li a {
+    color: rgba(0, 0, 0, 0.8)!important;
+}
+
+header nav ul li a:hover {
+     color: rgba(0, 0, 0, 0.6)!important;
+ }
+
+header nav form select {
+    background: transparent;
+    border:none;
+    height: 2rem;
+}
+
+header h2 {
+    text-align: center;
+}
+/*-- HEADER --*/
+
+/*-- TUILE --*/
 .tuile {
-    /* Shadow */
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-    /* Borders */
     border-radius: 2vw;
-    /* Margins */
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
     padding: 7vh 6vw 9vh 6vw;
     margin-left: auto!important;
     margin-right: auto!important;
-    /* Bg */
-    background-color: #fff; 
+    background-color: #fff;
 }
-/* TUILE */
+/*-- TUILE --*/
 
-/* FOOTER */
+/*-- FOOTER --*/
 footer {
     text-align: center;
     padding-top: 2rem;
@@ -67,4 +69,10 @@ footer img {
     height: 40px;
     margin-bottom: 0.5rem;
 }
-/* FOOTER */
+/*-- FOOTER --*/
+
+/*-- DIVERS --*/
+.hidden {
+    display: none;
+}
+/*-- DIVERS --*/

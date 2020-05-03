@@ -15,10 +15,6 @@ section form div input.error, section form div textarea.error {
     background-color: rgba(255, 0, 0, 0.01);
 }
 
-.hidden {
-    display: none;
-}
-
 .alert-success {
     margin-top: 2rem;
 }

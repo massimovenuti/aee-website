@@ -1,47 +1,54 @@
-<header class="shadow-lg">
-    <h1>Association des Étudiants Étrangers</h1>
+<header>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
         <!-- RESPONSIVE -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- RESPONSIVE -->
+
+        <!-- LOGO -->
+        <a class="btn btn-dark" href="index.php"> <?= $dico[$lang]['aee'] ?> </a>
+        <!-- LOGO -->
+
+        <!-- NAV -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+                <!-- ACCUEIL -->
                 <li class="nav-item">
-                    <!-- ACCUEIL -->
-                    <a class="nav-link" href="/projet-s4/index.php">ACCUEIL</a>
-                    <!-- ACCUEIL -->
+                    <a class="nav-link" href="index.php"><?= $dico[$lang]['accueil'] ?></a>
                 </li>
+                <!-- ACCUEIL -->
+                <!-- QUI SOMMES-NOUS -->
                 <li class="nav-item">
-                    <!-- QUI SOMMES-NOUS -->
-                    <a class="nav-link" href="/projet-s4/aee.php">QUI SOMMES NOUS ?</a>
-                    <!-- QUI SOMMES-NOUS -->
+                    <a class="nav-link" href="aee.php"><?= $dico[$lang]['qui-sommes-nous'] ?></a>
                 </li>
+                <!-- QUI SOMMES-NOUS -->
+                <!-- ANNONCES -->
                 <li class="nav-item">
-                    <!-- ANNONCES -->
-                    <a class="nav-link" href="/projet-s4/annonces.php">ANNONCES</a>
-                    <!-- ANNONCES -->
+                    <a class="nav-link" href="annonces.php"><?= $dico[$lang]['annonces'] ?></a>
                 </li>
+                <!-- ANNONCES -->
+                <!-- CONTACT -->
                 <li class="nav-item">
-                    <!-- CONTACT -->
-                    <a class="nav-link" href="/projet-s4/contact.php">CONTACT</a>
-                    <!-- CONTACT -->
+                    <a class="nav-link" href="contact.php"><?= $dico[$lang]['contact'] ?></a>
                 </li>
-                <li class="nav-item dropdown">
-                    <!-- LANGUE -->
-                    <form class="form-inline">
-                        <select class="custom-select my-1 mr-sm-2">
-                            <option value="FR">FR</option>
-                            <option value="EN">EN</option>
-                            <option value="DE">DE</option>
-                        </select>
-                    </form>
-                    <!-- LANGUE -->
-                </li>
-            </ul> 
+                <!-- CONTACT -->
+            </ul>
+            <!-- LANGUES -->
+            <form method="get" class="form-inline">
+                <input type="hidden" name="id" value="<?= $id ?>"/>
+                <label for="lang"></label>
+                <select id="lang" name="lang" class="shadow-sm" onchange='this.form.submit()'>
+                    <option value="">LANG</option>
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                    <option value="de">DE</option>
+                </select>
+            </form>
+            <!-- LANGUES -->
         </div>
+        <!-- NAV -->
     </nav>
     <!-- NAVBAR -->
 </header>

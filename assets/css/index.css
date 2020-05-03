@@ -1,4 +1,4 @@
-/* DERNIÈRES ANNONCES */
+/*-- DERNIÈRES ANNONCES --*/
 section article {
     width: 90%;
     border-radius: 1vw!important;
@@ -13,7 +13,7 @@ section article img {
 
 section .cards > div:last-of-type {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 section .cards  > p {
@@ -21,9 +21,9 @@ section .cards  > p {
     margin-right: auto;
     margin-top: 2rem;
 }
-/* DERNIÈRES ANNONCES */
+/*-- DERNIÈRES ANNONCES --*/
 
-/* GALERIE */
+/*-- GALERIE --*/
 .galerie {
     background-color: #fff;
     margin-bottom: -5rem;
@@ -38,4 +38,4 @@ section .cards  > p {
 .galerie .carousel-inner {
     max-height: 80vh;
 }
-/* GALERIE */
+/*-- GALERIE --*/
