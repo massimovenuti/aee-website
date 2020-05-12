@@ -6,7 +6,7 @@
             <a href=""><img src="assets/img/youtube.svg" alt="Youtube icon"></a>
         </div>
         <div class="col-12">
-            <p><?= $dico[$lang]['association']?></p>
+            <p><?= $i18n->get('general', 'association') ?></p>
         </div>
     </div>
 </footer>

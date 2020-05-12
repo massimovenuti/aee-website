@@ -60,12 +60,12 @@
 
 ### Page 2 - Qui sommes nous ?
 
-- Fichier aee.php
+- Fichier presentation.php
 - Série de photos et de paragraphes pour présenter l’association
 
 ### Page 3 - Annonces
 
-- Fichier annonces.php
+- Fichier events.php
 - Toutes les annonces sont affichées les unes après les autres
 - Les dernières annonces sont affichées en premières
 - Chaque annonce a une image associée
@@ -76,7 +76,7 @@
 
 ### Page 4 - Créer une annonce
 
-- Fichier nouvAnnonce.php
+- Fichier newEvent.php
 - Formulaire
 - Le format du fichier fourni devra obligatoirement être celui d'une image sinon le formulaire ne sera pas validé
 - Message indiquant si le formulaire est invalide et les zones concernées deviennent rouges
@@ -84,7 +84,7 @@
 
 ### Page 5 - Détails d'une annonce
 
-- Fichier details.php
+- Fichier eventDetails.php
 - Annonce sur la gauche avec son image et son titre
 - Lien vers d'autres annonces à droite avec barre de recherche
 

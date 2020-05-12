@@ -6,36 +6,34 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- RESPONSIVE -->
-
         <!-- LOGO -->
-        <a class="btn btn-dark" href="index.php"> <?= $dico[$lang]['aee'] ?> </a>
+        <a class="btn btn-dark" href="index.php"> <?= $i18n->get('general', 'isa') ?> </a>
         <!-- LOGO -->
-
         <!-- NAV -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <!-- ACCUEIL -->
+                <!-- INDEX -->
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php"><?= $dico[$lang]['accueil'] ?></a>
+                    <a class="nav-link" href="index.php"><?= $i18n->get('home', 'title') ?></a>
                 </li>
-                <!-- ACCUEIL -->
-                <!-- QUI SOMMES-NOUS -->
+                <!-- INDEX -->
+                <!-- ASSOCIATION -->
                 <li class="nav-item">
-                    <a class="nav-link" href="aee.php"><?= $dico[$lang]['qui-sommes-nous'] ?></a>
+                    <a class="nav-link" href="presentation.php"><?= $i18n->get('presentation', 'title') ?></a>
                 </li>
-                <!-- QUI SOMMES-NOUS -->
-                <!-- ANNONCES -->
+                <!-- ASSOCIATION -->
+                <!-- EVENTS -->
                 <li class="nav-item">
-                    <a class="nav-link" href="annonces.php"><?= $dico[$lang]['annonces'] ?></a>
+                    <a class="nav-link" href="events.php"><?= $i18n->get('events', 'title') ?></a>
                 </li>
-                <!-- ANNONCES -->
+                <!-- EVENTS -->
                 <!-- CONTACT -->
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.php"><?= $dico[$lang]['contact'] ?></a>
+                    <a class="nav-link" href="contact.php"><?= $i18n->get('contact', 'title') ?></a>
                 </li>
                 <!-- CONTACT -->
             </ul>
-            <!-- LANGUES -->
+            <!-- LANG -->
             <form method="get" class="form-inline">
                 <input type="hidden" name="id" value="<?= $id ?>"/>
                 <label for="lang"></label>
@@ -46,7 +44,7 @@
                     <option value="de">DE</option>
                 </select>
             </form>
-            <!-- LANGUES -->
+            <!-- LANG -->
         </div>
         <!-- NAV -->
     </nav>

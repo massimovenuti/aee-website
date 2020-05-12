@@ -1,63 +1,65 @@
-<?php include 'assets/php/dico.php'; ?>
+<?php
+session_start();
+include 'assets/php/I18n.php';
+$i18n = new I18n();
+?>
 
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
 <head>
     <?php include 'templates/head.php'; ?>
     <link rel="stylesheet" href="assets/css/aee.css">
-    <title><?= $dico[$lang]['qui-sommes-nous'] . ' | ' . $dico[$lang]['association'] ?></title>
+    <title><?= $i18n->get('presentation', 'title') . ' | ' . $i18n->get('general', 'association') ?></title>
 </head>
 <body>
     <!-- HEADER -->
-    <?php include("templates/header.php"); ?>
+    <?php include 'templates/header.php'; ?>
     <!-- HEADER -->
 
-   <!-- DESCRIPTION -->
-   <article class="container tuile">
+    <!-- ASSOCIATION -->
+    <article class="container tuile">
        <!-- HEADER -->
         <header>
-            <h2><?= $dico[$lang]['qui-sommes-nous'] ?></h2>
+            <h2><?= $i18n->get('presentation', 'title') ?></h2>
         </header>
        <!-- HEADER -->
-
-       <!-- CONTENU -->
+       <!-- CONTENT -->
         <section class="row">
-            <!-- PARTIE 1 -->
+            <!-- PART 1 -->
             <div class="col-12 col-md-5 text-right">
                 <img src="assets/img/gal1.jpg" alt="Image descriptive de l'association" class="shadow-sm">
             </div>
             <div class="col-12 col-md-7 text-left">
-                <h3><?= $dico[$lang]['aee-titre1'] ?></h3>
-                <p><?= $dico[$lang]['aee-texte1'] ?></p>
+                <h3><?= $i18n->get('presentation', 'subtitle1') ?></h3>
+                <p><?= $i18n->get('presentation', 'paragraph1') ?></p>
             </div>
-            <!-- PARTIE 1 -->
-            <!-- PARTIE 2 -->
+            <!-- PART 1 -->
+            <!-- PART 2 -->
             <div class="col-12 col-md-7 text-right">
-                <h3><?= $dico[$lang]['aee-titre2'] ?></h3>
-                <p><?= $dico[$lang]['aee-texte2'] ?></p>
+                <h3><?= $i18n->get('presentation', 'subtitle2') ?></h3>
+                <p><?= $i18n->get('presentation', 'paragraph2') ?></p>
             </div>
             <div class="col-12 col-md-5 text-left">
                 <img src="assets/img/gal1.jpg" alt="Image descriptive de l'association" class="shadow-sm">
             </div>
-            <!-- PARTIE 2 -->
-            <!-- PARTIE 3 -->
+            <!-- PART 2 -->
+            <!-- PART 3 -->
             <div class="col-12 col-md-5 text-right">
                 <img src="assets/img/gal1.jpg" alt="Image descriptive de l'association" class="shadow-sm">
             </div>
             <div class="col-12 col-md-7 text-left">
-                <h3><?= $dico[$lang]['aee-titre3'] ?></h3>
-                <p><?= $dico[$lang]['aee-texte3'] ?></p>
+                <h3><?= $i18n->get('presentation', 'subtitle3') ?></h3>
+                <p><?= $i18n->get('presentation', 'paragraph3') ?></p>
             </div>
-            <!-- PARTIE 3 -->
+            <!-- PART 3 -->
         </section>
-       <!-- CONTENU -->
-   </article>
-    <!-- DESCRIPTION -->
+       <!-- CONTENT -->
+    </article>
+    <!-- ASSOCIATION -->
 
     <!-- FOOTER -->
     <?php include 'templates/footer.php'; ?>
     <!-- FOOTER -->
-
     <?php include("templates/scripts.php"); ?>
 </body>
 </html>

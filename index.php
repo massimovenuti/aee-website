@@ -1,62 +1,76 @@
 <?php
-include 'assets/php/dico.php';
-include 'assets/php/connectBD.php';
-// Sélection des annonces
-$annonces = $pdo->query(
-    'SELECT * FROM annonces ORDER BY id DESC LIMIT 2'
-)->fetchAll();
+try {
+    session_start();
+    include 'assets/php/I18n.php';
+    include 'assets/php/Bdd.php';
+    $bdd = new Bdd();
+    $i18n = new I18n();
+    $i18n->getLang();
+    $bdd->connexion();
+    $bdd->createTable();
+    $events = $bdd->select();
+
+} catch(PDOException $exception) {
+    var_dump($exception);
+}
 ?>
 
 <!DOCTYPE html>
-<html lang="<?= $lang ?>">
+<html lang="<?= $i18n->getCurrentLang() ?>">
 <head>
     <?php include 'templates/head.php'; ?>
     <link rel="stylesheet" href="assets/css/index.css">
-    <title><?= $dico[$lang]['accueil'] . ' | ' . $dico[$lang]['association'] ?></title>
+    <title><?= $i18n->get('home', 'title') . ' | ' . $i18n->get('general', 'association') ?></title>
 </head>
 <body>
     <!-- HEADER -->
     <?php include 'templates/header.php';?>
     <!-- HEADER -->
 
-    <!-- DERNIÈRES ANNONCES -->
+    <!-- LATEST EVENTS -->
     <section class="container tuile">
         <!-- HEADER -->
         <header>
-            <h2><?= $dico[$lang]['dernieres-annonces'] ?></h2>
+            <h2><?= $i18n->get('home', 'subtitle') ?></h2>
         </header>
         <!-- HEADER -->
-
-        <!-- CARDS -->
+        <!-- EVENTS -->
         <div class="cards row">
             <?php
-            if (count($annonces) > 0) {
-                foreach ($annonces as $annonce) { ?>
+            if (count($events) > 0) :
+                foreach ($events as $event) :
+                    ?>
                     <div class="col-12 col-lg-6">
                         <article class="card shadow-sm">
-                            <img src="assets/img/<?= $annonce['image'] ?>" class="card-img-top" alt="Image de l'annonce: <?= $annonce['titre'] ?>">
+                            <img src="assets/img/<?= $event['image'] ?>" class="card-img-top" alt="Image de l'annonce: <?= $event['titre'] ?>">
                             <div class="card-body">
-                                <h3 class="card-title"><?= $annonce['titre'] ?></h3>
-                                <p class="card-text"><?= $annonce['resume'] ?></p>
-                                <a href="details.php?id=<?= $annonce['id'] ?>">
-                                    <?= $dico[$lang]['details'] ?>
+                                <h3 class="card-title"><?= $event['titre'] ?></h3>
+                                <p class="card-text"><?= $event['resume'] ?></p>
+                                <a href="eventDetails.php?id=<?= $event['id'] ?>">
+                                    <?= $i18n->get('general', 'details') ?>
                                 </a>
                             </div>
                         </article>
                     </div>
-                <?php } ?>
+                    <?php
+                endforeach;
+                ?>
                 <div class="col-12">
-                    <a href="annonces.php" class="btn btn-dark"><?= $dico[$lang]['voir-tout'] ?></a>
+                    <a href="events.php" class="btn btn-dark"><?= $i18n->get('home', 'seeAllButton') ?></a>
                 </div>
-            <?php } else { ?>
-                <p><?= $dico[$lang]['0-annonce'] ?></p>
-            <?php } ?>
+                <?php
+            else :
+                ?>
+                <p><?= $i18n->get('home', 'noEvent') ?></p>
+                <?php
+            endif;
+            ?>
         </div>
-        <!-- CARDS -->
+        <!-- EVENTS -->
     </section>
-    <!-- DERNIÈRES ANNONCES -->
+    <!-- LATEST EVENTS -->
 
-    <!-- GALERIE -->
+    <!-- CAROUSEL -->
     <section class="container-fluid galerie">
         <div class="col-12">
             <div id="carouselExampleControls" class="carousel slide" data-interval="100000" data-pause="hover">
@@ -88,12 +102,11 @@ $annonces = $pdo->query(
             </div>
         </div>
     </section>
-    <!-- GALERIE -->
+    <!-- CAROUSEL -->
 
     <!-- FOOTER -->
     <?php include 'templates/footer.php'; ?>
     <!-- FOOTER -->
-
     <?php include 'templates/scripts.php'; ?>
 </body>
 </html>
