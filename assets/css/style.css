@@ -1,22 +1,22 @@
 /*-- BODY --*/
 body {
-    background: rgb(255,0,0);
-    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(182,0,193,1) 100%);
+    background: rgb(255, 0, 0);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(182, 0, 193, 1) 100%);
 }
-/*-- BODY --*/
 
 /*-- HEADER --*/
 header nav {
-    padding-top: 1.2rem!important;
-    padding-bottom: 1.2rem!important;
+    padding-top: 1.2rem !important;
+    padding-bottom: 1.2rem !important;
     background-color: white;
 }
 
 header nav .btn {
-    color:black;
+    color: black;
     background: transparent;
     border-color: black;
 }
+
 header nav ul {
     margin-right: auto;
 }
@@ -27,39 +27,26 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: rgba(0, 0, 0, 0.8)!important;
+    color: rgba(0, 0, 0, 0.8) !important;
 }
 
 header nav ul li a:hover {
-     color: rgba(0, 0, 0, 0.6)!important;
- }
+    color: rgba(0, 0, 0, 0.6) !important;
+}
 
 header nav form select {
     background: transparent;
-    border:none;
+    border: none;
     height: 2rem;
 }
 
 header h2 {
     text-align: center;
 }
-/*-- HEADER --*/
-
-/*-- TUILE --*/
-.tuile {
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-    border-radius: 2vw;
-    margin-top: 10rem;
-    margin-bottom: 7rem;
-    padding: 7vh 6vw 9vh 6vw;
-    margin-left: auto!important;
-    margin-right: auto!important;
-    background-color: #fff;
-}
-/*-- TUILE --*/
 
 /*-- FOOTER --*/
 footer {
+    width:100%;
     text-align: center;
     padding-top: 2rem;
     background-color: #fff;
@@ -69,10 +56,25 @@ footer img {
     height: 40px;
     margin-bottom: 0.5rem;
 }
-/*-- FOOTER --*/
 
-/*-- DIVERS --*/
+/*-- OTHER --*/
 .hidden {
     display: none;
 }
-/*-- DIVERS --*/
+
+.tile {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    border-radius: 2vw;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
+    padding: 7vh 6vw 9vh 6vw;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #fff;
+}
+
+@media (min-width: 900px) {
+    .container {
+        max-width: 75% !important;
+    }
+}

@@ -3,107 +3,88 @@ try {
     session_start();
     include 'assets/php/I18n.php';
     include 'assets/php/Bdd.php';
+
     $i18n = new I18n();
+    $i18n->getUserLang();
+
     $bdd = new Bdd();
     $bdd->connexion();
     $bdd->createTable();
     $events = $bdd->select();
+
     $id = intval(htmlspecialchars($_GET['id']));
     $detail = $bdd->selectFromId($id);
-
     if (count($detail) == 0)
         $detail = $events[0];
 
-} catch(PDOException $exception) {
+} catch (PDOException $exception) {
     var_dump($exception);
 }
 ?>
 
 <!DOCTYPE html>
-<html lang="<?= $lang ?>">
+<html lang="<?= $i18n->getCurrentLang() ?>">
 <head>
     <?php include 'templates/head.php'; ?>
-    <link rel="stylesheet" href="assets/css/details.css">
-    <title><?= $detail[0]['titre'] . ' | ' . $i18n->get('general', 'association') ?></title>
+    <link rel="stylesheet" href="assets/css/eventDetails.css">
+    <title><?= $detail[0]['title'] . ' | ' . $i18n->get('general', 'association') ?></title>
 </head>
 <body>
-    <!-- HEADER -->
-    <?php include 'templates/header.php'; ?>
-    <!-- HEADER -->
+<!-- HEADER -->
+<?php include 'templates/header.php'; ?>
 
-    <!-- DETAILS -->
-    <div class="container">
-        <div class="row">
-            <!-- EVENT -->
-            <div class="col-12 col-lg-8">
-                <article class="tuile" id="details">
-                    <header>
-                        <img src="assets/img/<?= $detail[0]['image'] ?>" alt="Image de l'annonce: <?= $detail['titre'] ?>">
-                        <h2><?= $detail[0]['titre'] ?></h2>
-                    </header>
-                    <div>
-                        <?= $detail[0]['contenu'] ?>
+<!-- EVENT DETAILS & OTHER EVENTS -->
+<div class="container tile">
+    <div class="row">
+        <!-- EVENT DETAILS -->
+        <article id="details" class="col-12 col-lg-8">
+            <header>
+                <img src="assets/img/<?= $detail[0]['image'] ?>" alt="Image for event: <?= $detail['title'] ?>">
+                <h2><?= $detail[0]['title'] ?></h2>
+            </header>
+            <?= $detail[0]['content'] ?>
+        </article>
+
+        <!-- OTHER EVENTS  -->
+        <aside class="col-12 col-lg-4">
+            <!-- TITLE -->
+            <header>
+                <h2><?= $i18n->get('eventDetails', 'subtitle') ?></h2>
+            </header>
+            <!-- SEARCH BAR -->
+            <form method="get" action="events.php">
+                <div class="form-row">
+                    <input type="hidden" name="id" value="<?= $id ?>"/>
+                    <div class="col-9">
+                        <label for="query" class="hidden"></label>
+                        <input id="query" type="search" name="query" class="form-control"
+                               placeholder="<?= $i18n->get('general', 'search') ?>"/>
                     </div>
+                    <div class="col-3">
+                        <input type="submit" class="btn btn-light" value="OK"/>
+                    </div>
+                </div>
+            </form>
+            <!-- EVENTS -->
+            <?php
+            foreach ($events as $event) :
+                ?>
+                <article class="col-12 shadow-sm">
+                    <h3><?= $event['title'] ?></h3>
+                    <a href="eventDetails.php?id=<?= $event['id'] ?>"><?= $i18n->get('general', 'details') ?></a>
                 </article>
-            </div>
-            <!-- EVENT -->
-            <!-- ASIDE -->
-            <div class="col-12 col-lg-4">
-                <aside class="tuile">
-                    <!-- HEADER -->
-                    <header>
-                        <h2><?= $i18n->get('eventDetails', 'subtitle') ?></h2>
-                        <form method="get" action="events.php">
-                            <div class="form-row">
-                                <input type="hidden" name="id" value="<?= $id ?>"/>
-                                <div class="col-9">
-                                    <input type="search" name="query" class="form-control" placeholder="<?= $i18n->get('general', 'search') ?>"/>
-                                </div>
-                                <div class="col-3">
-                                    <input type="submit" class="btn btn-light" value="OK"/>
-                                </div>
-                            </div>
-                        </form>
-                    </header>
-                    <!-- HEADER -->
-                    <!-- EVENTS -->
-                    <div class="row">
-                        <?php
-                        if (count($events) > 0) :
-                            foreach ($events as $event) :
-                                ?>
-                                <div class="col-12">
-                                    <article class="row shadow-sm">
-                                        <div class="col-12">
-                                            <h3><?= $event['titre'] ?></h3>
-                                            <a href="eventDetails.php?id=<?= $event['id'] ?>">
-                                                <?= $i18n->get('general', 'details') ?>
-                                            </a>
-                                        </div>
-                                    </article>
-                                </div>
-                                <?php
-                            endforeach;
-                        else :
-                            ?>
-                            <div class="col-12">
-                                <?= $i18n->get('eventDetails', 'noEvent'); ?>
-                            </div>
-                            <?php
-                        endif;
-                        ?>
-                    </div>
-                    <!-- EVENTS -->
-                </aside>
-            </div>
-            <!-- ASIDE -->
-        </div>
+            <?php
+            endforeach;
+            if (count($events) == 0)
+                echo $i18n->get('eventDetails', 'noEvent');
+            ?>
+        </aside>
     </div>
-    <!-- DETAILS -->
+</div>
 
-    <!-- FOOTER -->
-    <?php include 'templates/footer.php'; ?>
-    <!-- FOOTER -->
-    <?php include 'templates/scripts.php'; ?>
+<!-- FOOTER -->
+<?php include 'templates/footer.php'; ?>
+
+<?php include 'templates/scripts.php'; ?>
 </body>
 </html>

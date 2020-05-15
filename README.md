@@ -48,7 +48,7 @@
 
 ## Description
 
-![Description](assets/img/description.png)
+![Description](assets/img/description.jpg)
 
 ### Page 1 - Accueil
 

@@ -1,41 +1,29 @@
-/*-- DERNIÈRES ANNONCES --*/
-section article {
+/*-- LATEST EVENTS --*/
+section:first-of-type article {
     width: 90%;
-    border-radius: 1vw!important;
+    border-radius: 1vw !important;
     margin: 2rem auto auto;
     overflow: hidden;
 }
 
-section article img {
+section:first-of-type article img {
     height: 20vh;
     object-fit: cover;
 }
 
-section .cards > div:last-of-type {
+section:first-of-type > div:last-of-type {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 9vh;
 }
 
-section .cards  > p {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
-}
-/*-- DERNIÈRES ANNONCES --*/
-
-/*-- GALERIE --*/
-.galerie {
+/*-- CAROUSEL --*/
+section:last-of-type {
     background-color: #fff;
     margin-bottom: -5rem;
     padding: 5rem 0 5rem 0;
 }
 
-.galerie .col-12 {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.galerie .carousel-inner {
+section:last-of-type img {
     max-height: 80vh;
+    object-fit: cover;
 }
-/*-- GALERIE --*/

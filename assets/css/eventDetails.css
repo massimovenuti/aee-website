@@ -1,0 +1,50 @@
+/*-- EVENT DETAILS --*/
+article#details {
+    padding-right: 4vw;
+    margin-bottom: 7rem;
+    word-wrap: break-word;
+}
+
+article#details header h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+article#details header img {
+    width: 100%;
+    max-height: 35vh;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+
+/* OTHER EVENTS */
+aside article {
+    border-radius: 1vw;
+    margin-top: 1.5rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    word-wrap: break-word;
+}
+
+aside article h3 {
+    font-size: 1.1rem;
+}
+
+aside article a {
+    font-size: 0.9rem;
+}
+
+aside article img {
+    object-fit: cover;
+}
+
+aside form input {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+

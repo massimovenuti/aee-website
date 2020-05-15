@@ -3,33 +3,34 @@ try {
     session_start();
     include 'I18n.php';
     include 'Bdd.php';
+
+    $i18n = new I18n();
+    $i18n->getUserLang();
+
     $bdd = new Bdd();
     $bdd->connexion();
     $bdd->createTable();
+
     $page = intval(htmlspecialchars(($_GET['page'])));
-
     if ($page)
-        $annonces = $bdd->select($page);
+        $events = $bdd->select(4, $page);
 
-    foreach ($annonces as $annonce) :
+    foreach ($events as $event) :
         ?>
-        <div class="col-12">
-            <article class="row shadow-sm">
-                <div class="col-12 col-lg-3">
-                    <img src="assets/img/<?= $annonce['image'] ?>" alt="Image de l'annonce: <?= $annonce['titre'] ?>">
-                </div>
-                <div class="col-12 col-lg-9">
-                    <h3><?= $annonce['titre'] ?></h3>
-                    <p> <?= $annonce['resume'] ?></p>
-                    <a href="details.php?lang=<?= $lang ?>&id=<?= $annonce['id'] ?>">
-                        <?= $i18n->get('general', 'details') ?>
-                    </a>
-                </div>
-            </article>
-        </div>
-        <?php
+        <article class="row shadow-sm">
+            <div class="col-12 col-lg-3">
+                <img src="assets/img/<?= $event['image'] ?>" alt="Image for event: <?= $event['title'] ?>">
+            </div>
+            <div class="col-12 col-lg-9">
+                <h3><?= $event['title'] ?></h3>
+                <p> <?= $event['summary'] ?></p>
+                <a href="eventDetails.php?id=<?= $event['id'] ?>"><?= $i18n->get('general', 'details') ?></a>
+            </div>
+        </article>
+    <?php
     endforeach;
-} catch(PDOException $exception) {
+
+} catch (PDOException $exception) {
     var_dump($exception);
 }
 ?>

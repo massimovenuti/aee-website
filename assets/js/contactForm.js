@@ -1,10 +1,10 @@
 document.querySelector('section form button')
-    .addEventListener('click',function (event) {
+    .addEventListener('click', function (event) {
         event.preventDefault();
 
         let error = false;
         const regexInput = /^[\S]{1,50}$/;
-        const inputVerif = function() {
+        const inputVerif = function () {
             if (this.value.match(regexInput) === null) {
                 this.classList.add('error');
                 this.previousElementSibling.classList.add('error');
@@ -61,9 +61,7 @@ document.querySelector('section form button')
 
         if (!error) {
             document.querySelector('section form').submit();
-            alert('Message envoyé !');
-        }
-        else {
+        } else {
             document.querySelector('section form .alert').classList.remove('hidden');
         }
     });
